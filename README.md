@@ -1,4 +1,4 @@
-# Intoduction
+# Introduction
 
 
 I have always had a profound love for cricket, driven in part by its rich tapestry of data and statistics. While the ICC provides ranking systems, I found them confusing and opaque. Moreover, there seemed to be a lack of a data-based method to comprehensively rank players based on their cumulative performance.
