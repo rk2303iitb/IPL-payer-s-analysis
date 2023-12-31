@@ -6,7 +6,7 @@ I have always had a profound love for cricket, driven in part by its rich tapest
 In my quest for a more transparent and insightful approach, I stumbled upon the [Run Above Average](http://www.cricmetric.com/blog/2012/02/a-context-independent-method-of-ranking-odi-players/) method for ranking batters. Intrigued, I decided to apply this methodology to IPL data, aiming to provide a fresh perspective on player rankings.
 
 SO basially, I've tried to extract following(and potentially other rankings when I'll get some time XD)-
-   1. Ranking based on Run above average- SQL code
+   1. Ranking based on Run above average- [SQL code](https://github.com/rk2303iitb/IPL-payers-analysis/blob/main/Run%20above%20average%20query.md#query-for-run-above-average)
    2. Ranking based on maiden overs- SQL code
 
 Dataset used- [Indian Premier league(IPL Cricket) till 2016 - dataset by raghu543](https://data.world/raghu543/ipl-data-till-2016-set-of-csv-files)
