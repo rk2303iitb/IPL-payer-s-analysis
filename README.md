@@ -16,7 +16,7 @@ Dataset used- [Indian Premier league(IPL Cricket) till 2016 - dataset by raghu54
 - Used 4 tables(ball_by_ball, batsman_scored, extra_runs, player) for maiden over case study
 
 ## Results
-- Run above average(exxcluding those who never got out, as zero notouts in denominator giving undetermined value)
+- Run above average(excluding batters with zero outs)
 
   
 - Maiden overs 
