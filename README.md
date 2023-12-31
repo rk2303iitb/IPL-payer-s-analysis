@@ -18,5 +18,11 @@ Dataset used- [Indian Premier league(IPL Cricket) till 2016 - dataset by raghu54
 ## Results
 - Run above average(excluding batters with zero outs)
 [runs-above-average.csv](https://github.com/rk2303iitb/IPL-payers-analysis/files/13800615/runs-above-average.csv)
+
+![Screenshot 2023-12-31 135927](https://github.com/rk2303iitb/IPL-payers-analysis/assets/155146605/26d5cff4-aef2-4be5-81d3-66873a79ecae)
   
-- Maiden overs 
+- Maiden overs
+[maiden-bowlers.csv](https://github.com/rk2303iitb/IPL-payers-analysis/files/13800619/maiden-bowlers.csv)
+
+![Screenshot 2023-12-31 140054](https://github.com/rk2303iitb/IPL-payers-analysis/assets/155146605/7094bbc9-c2d8-428b-b9ad-566920eb2ef1)
+
