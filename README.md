@@ -7,7 +7,7 @@ In my quest for a more transparent and insightful approach, I stumbled upon the 
 
 SO basially, I've tried to extract following(and potentially other rankings when I'll get some time XD)-
    1. Ranking based on Run above average- [SQL code](https://github.com/rk2303iitb/IPL-payers-analysis/blob/main/Run%20above%20average%20query.md#query-for-run-above-average)
-   2. Ranking based on maiden overs- SQL code
+   2. Ranking based on maiden overs- [SQL code](https://github.com/rk2303iitb/IPL-payers-analysis/blob/main/Maiden%20overs%20query.md#sql-query-for-maiden-overs)
 
 Dataset used- [Indian Premier league(IPL Cricket) till 2016 - dataset by raghu543](https://data.world/raghu543/ipl-data-till-2016-set-of-csv-files)
 - Publically available database with ball by ball records till IPL 2016
