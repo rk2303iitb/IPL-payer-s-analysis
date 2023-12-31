@@ -1,0 +1,45 @@
+# SQL query for maiden overs
+```sql
+-- Calculate the total maidens bowled by each player
+
+-- Common Table Expression (CTE) to combine relevant data
+WITH cte AS (
+    SELECT 
+        ball_by_ball.match_id,
+        ball_by_ball.innings_no,
+        ball_by_ball.over_id,
+        ball_by_ball.ball_id,
+        COALESCE(batsman_scored.runs_scored, 0) + COALESCE(extra_runs.extra_runs, 0) AS net_run_on_ball,
+        player.player_name
+    FROM 
+        ball_by_ball
+        LEFT JOIN batsman_scored
+        ON ball_by_ball.match_id = batsman_scored.match_id
+        AND ball_by_ball.innings_no = batsman_scored.innings_no
+        AND ball_by_ball.over_id = batsman_scored.over_id
+        AND ball_by_ball.ball_id = batsman_scored.ball_id
+        LEFT JOIN extra_runs
+        ON ball_by_ball.match_id = extra_runs.match_id
+        AND ball_by_ball.innings_no = extra_runs.innings_no
+        AND ball_by_ball.over_id = extra_runs.over_id
+        AND ball_by_ball.ball_id = extra_runs.ball_id
+        LEFT JOIN player
+        ON ball_by_ball.bowler = player.player_id
+)
+
+-- Main query to count total maidens for each player
+SELECT
+    player_name,
+    COUNT(player_name) AS total_maidens
+FROM (
+    -- Subquery to filter out innings with zero runs
+    SELECT
+        player_name
+    FROM cte
+    GROUP BY match_id, innings_no, over_id, player_name
+    HAVING SUM(net_run_on_ball) = 0
+) AS sq
+GROUP BY player_name
+ORDER BY COUNT(player_name) DESC, player_name ASC;
+
+```
